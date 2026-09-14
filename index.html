@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor de Mandacaru - Gastronomia & Aconchego</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#e52e2e',
+                        brandRedDark: '#b81d1d',
+                        brandWarmBg: '#fdfbf7',
+                        brandWood: '#2c1810',
+                        brandSand: '#f4ede2',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandWarmBg text-gray-800 font-sans antialiased selection:bg-brandRed selection:text-white">
+
+    <!-- BARRA SUPERIOR DE AVISO/DESTAQUE -->
+    <div class="bg-brandWood text-amber-100 text-xs py-2 px-4 text-center font-medium tracking-wide">
+        <i class="fa-solid fa-utensils text-brandRed mr-2"></i> Experiência gastronômica única em São João da Boa Vista
+    </div>
+
+    <!-- CABEÇALHO / HERO SECTION -->
+    <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <!-- Imagem de Fundo (Ambiente Interno com Luminárias de Palha) -->
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" 
+             style="background-image: url('hero.png');"></div>
+        
+        <!-- Overlay Gradiente Elegante -->
+        <div class="absolute inset-0 bg-gradient-to-t from-brandWood via-brandWood/70 to-black/40"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-6 py-16">
+            <!-- Badge em Estilo Rústico Elegante -->
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest text-amber-200 uppercase bg-amber-500/20 backdrop-blur-md border border-amber-300/30 rounded-full">
+                <i class="fa-solid fa-star text-amber-400 text-xs"></i> 4,5 no Google (86+ avaliações)
+            </span>
+
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white font-serif tracking-tight leading-tight mb-6">
+                Flor de Mandacaru <br>
+                <span class="text-brandRed italic font-normal">Gastronomia</span>
+            </h1>
+
+            <p class="text-lg md:text-2xl text-amber-100/90 max-w-2xl mx-auto font-light mb-10 leading-relaxed">
+                Ambiente aconchegante, tempero inesquecível e a verdadeira brasilidade no prato.
+            </p>
+            
+            <!-- Botão Direto para WhatsApp -->
+            <a href="https://wa.me/5519996772509?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20card%C3%A1pio%20ou%20fazer%20uma%20reserva." 
+               target="_blank" 
+               class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-2xl hover:shadow-emerald-600/50 transition-all duration-300 transform hover:-translate-y-1">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>Reservar Mesa ou Fazer Pedido</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HIGHLIGHTS / DIFERENCIAIS -->
+    <section class="bg-brandSand border-b border-amber-200/60 py-8">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-3">
+                <i class="fa-solid fa-chair text-brandRed text-2xl mb-2"></i>
+                <h4 class="font-serif font-bold text-brandWood">Refeição no Local</h4>
+                <p class="text-xs text-gray-600">Ambiente decorado e acolhedor</p>
+            </div>
+            <div class="p-3">
+                <i class="fa-solid fa-bag-shopping text-brandRed text-2xl mb-2"></i>
+                <h4 class="font-serif font-bold text-brandWood">Para Viagem</h4>
+                <p class="text-xs text-gray-600">Marmitas e pratos executivos</p>
+            </div>
+            <div class="p-3">
+                <i class="fa-solid fa-truck-ramp-box text-brandRed text-2xl mb-2"></i>
+                <h4 class="font-serif font-bold text-brandWood">Entrega sem Contato</h4>
+                <p class="text-xs text-gray-600">Sua refeição com segurança</p>
+            </div>
+            <div class="p-3">
+                <i class="fa-solid fa-wheelchair text-brandRed text-2xl mb-2"></i>
+                <h4 class="font-serif font-bold text-brandWood">Acessibilidade</h4>
+                <p class="text-xs text-gray-600">Espaço totalmente adaptado</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS E CARDÁPIO EM GRID -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-14">
+            <span class="text-brandRed font-semibold text-xs tracking-widest uppercase">Nossa Culinária</span>
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-brandWood mt-2">Especialidades da Casa</h2>
+            <div class="w-20 h-1 bg-brandRed mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1: Prato Especial -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-amber-900/5 border border-amber-100 hover:shadow-2xl transition-all duration-300 group">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="prato.png" alt="Prato Flor de Mandacaru" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-brandRed text-white text-xs font-bold px-3 py-1 rounded-full">Destaque</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif text-xl font-bold text-brandWood mb-2">Pratos Executivos & Massas</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Opções preparadas na hora com ingredientes selecionados, como nosso aclamado Filé de Tilápia com Purê de Banana da Terra.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2: Estrutura / Fachada -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-amber-900/5 border border-amber-100 hover:shadow-2xl transition-all duration-300 group">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="fachada.png" alt="Fachada e Mesas Externas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif text-xl font-bold text-brandWood mb-2">Espaço Aberto & Varanda</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Mesas ao ar livre com ombrelone e um clima super agradável para almoços em família ou encontros com amigos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3: Saladas e Sanduíches -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-amber-900/5 border border-amber-100 hover:shadow-2xl transition-all duration-300 group">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="hamburguer.png" alt="Cardápio Variado" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-serif text-xl font-bold text-brandWood mb-2">Comida de qualidade e Porções</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Sanduíches saborosos, saladas variadas e porções generosas com preço justo e tempero genuíno.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS ESPELHADOS DO GOOGLE MAPS -->
+    <section class="py-20 bg-brandSand relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-14">
+                <div class="inline-flex items-center gap-2 text-amber-600 mb-2 font-semibold text-sm">
+                    <i class="fa-brands fa-google text-lg"></i> Avaliações Reais no Google Maps
+                </div>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-brandWood">O que Nossos Clientes Dizem</h2>
+                <p class="text-gray-600 mt-2 text-sm max-w-xl mx-auto">Resumo de avaliações gerado pelos visitantes que frequentam a Flor de Mandacaru.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Avaliação 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-amber-200/80 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic text-sm mb-6 leading-relaxed">
+                        "Local acolhedor, decoração linda, atendimento impecável e a comida uma delícia."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brandRed text-white font-bold flex items-center justify-center font-serif">M</div>
+                        <div>
+                            <p class="font-bold text-brandWood text-sm">Cliente do Google</p>
+                            <p class="text-xs text-gray-500">Avaliação verificada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avaliação 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-amber-200/80 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic text-sm mb-6 leading-relaxed">
+                        "Comi filé de tilápia com purê de banana da terra! Simplesmente espetacular o sabor."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center font-serif">C</div>
+                        <div>
+                            <p class="font-bold text-brandWood text-sm">Cliente do Google</p>
+                            <p class="text-xs text-gray-500">Avaliação verificada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avaliação 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-amber-200/80 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic text-sm mb-6 leading-relaxed">
+                        "Comida deliciosa e bem temperada, porções generosas, ambiente muito limpo e preços super justos!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center font-serif">F</div>
+                        <div>
+                            <p class="font-bold text-brandWood text-sm">Resumo da Comunidade</p>
+                            <p class="text-xs text-gray-500">Média 4,5 estrelas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO E HORÁRIOS -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            
+            <div>
+                <span class="text-brandRed font-semibold text-xs tracking-widest uppercase">Venha nos Visitar</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-brandWood mt-2 mb-8">Localização & Funcionamento</h2>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-brandRed/10 rounded-2xl flex items-center justify-center text-brandRed text-xl shrink-0 mt-1">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brandWood text-lg">Endereço</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Av. Dr. Durval Nicolau, 252 - Parque Res. Jardim São Domingos<br>
+                                São João da Boa Vista - SP, 13874-245
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-brandRed/10 rounded-2xl flex items-center justify-center text-brandRed text-xl shrink-0 mt-1">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brandWood text-lg">Horários de Atendimento</h4>
+                            <p class="text-gray-600 text-sm">Aberto diariamente</p>
+                            <p class="text-brandRed font-semibold text-sm">Fecha às 22:30</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-brandRed/10 rounded-2xl flex items-center justify-center text-brandRed text-xl shrink-0 mt-1">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brandWood text-lg">Telefone & WhatsApp</h4>
+                            <p class="text-gray-600 text-sm">(19) 99677-2509</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa Interativo do Google Maps -->
+            <div class="h-96 rounded-3xl overflow-hidden shadow-2xl border border-amber-200">
+                <iframe 
+                    title="Mapa Flor de Mandacaru Gastronomia"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.8!2d-46.79!3d-21.96!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDU4JzA3LjciUyA0NsKwNDcnNTIuNCJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-brandWood text-amber-100/70 py-10 border-t border-amber-900 text-center text-sm">
+        <p>&copy; 2026 Flor de Mandacaru Gastronomia. Todos os direitos reservados.</p>
+        <p class="text-xs text-amber-200/40 mt-2">Av. Dr. Durval Nicolau, 252 - São João da Boa Vista - SP</p>
+    </footer>
+
+</body>
+</html>
